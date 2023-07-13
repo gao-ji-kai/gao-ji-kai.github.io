@@ -1,0 +1,13 @@
+.medium-zoom-image {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.medium-zoom--opened .medium-zoom-overlay {
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.75) !important;
+}
+.medium-zoom-image--opened {
+    z-index: 21;
+    border-radius: 4px;
+    background: #fff;
+}
