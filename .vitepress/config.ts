@@ -39,7 +39,7 @@ const config: UserConfig = {
                 `<a style="color: #3eaf7c;" href="https://beian.miit.gov.cn" target="_blank">陇ICP备17000679号-2</a>`,
                 `<img style="display: inline;" src="//forguo.cn/assets/imgs/copy.png"/>
                     <a style="color: #3eaf7c;" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=62040302000107">甘公网安备 62040302000107号</a>`,
-                `<a target="_blank" href="https://github.com/gao-ji-kai">Copyright &copy; 2016 - ${new Date().getFullYear()} &nbsp;forguo</a>`
+                `<a target="_blank" href="https://github.com/gao-ji-kai">Copyright &copy; 2016 - ${new Date().getFullYear()} &nbsp;gaoter</a>`
         ]
     },
 }
