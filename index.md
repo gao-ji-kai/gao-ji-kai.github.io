@@ -14,7 +14,7 @@ hero:
           link: /f2e/知识体系
         - theme: alt
           text: GitHub
-          link: https://github.com/wforguo
+          link: https://github.com/gao-ji-kai
 
 features:
 - title: 🛠️
