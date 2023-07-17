@@ -2,11 +2,11 @@
 layout: home
 editLink: false
 
-title: Wei Design
+title: Gaoter Blog
 titleTemplate: The Power of Small Changes
 
 hero:
-    name: Wei Design
+    name: Gaoter Blog
     tagline: The Power of Small Changes
     actions:
         - theme: brand

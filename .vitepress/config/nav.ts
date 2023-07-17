@@ -12,7 +12,7 @@ const nav = [
     {
         text: '关于',
         items: [
-            {text: '笔记', link: `${pkg.homepage}`},
+            // {text: '笔记', link: `${pkg.homepage}`},
             // {text: 'CSDN', link: 'https://blog.csdn.net/weiguo19951107'},
             // {text: '组件库', link: 'https://wei-design.github.io/web-vue/'},
         ]
