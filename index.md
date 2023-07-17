@@ -12,7 +12,7 @@ hero:
   tagline: The Power of Small Changes
   image:
     src: /logo.png
-    alt: 茂茂物语
+    alt: gaoter
   actions:
     - text: 前端相关
       link: /f2e/javascript/clone
