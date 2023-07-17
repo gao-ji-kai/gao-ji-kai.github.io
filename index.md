@@ -15,7 +15,7 @@ hero:
     alt: 茂茂物语
   actions:
     - text: 前端相关
-      link: /f2e/git/
+      link: /f2e/javascript/clone
     - text: 前端导航
       link: /nav
       theme: alt
