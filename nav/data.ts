@@ -62,14 +62,9 @@ export const NAV_DATA: NavData[] = [
     ]
   },
   {
-    title: 'gaoter的站点导航',
+    title: '其他',
     items: [
-      {
-        icon: '/logo.png',
-        title: '前端日常笔记',
-        desc: '日常笔记记录（零零散散啥都记系列）',
-        link: 'https://github.com/maomao1996/daily-notes'
-      },
+      
       {
         icon: '/logo.png',
         title: '前端思维导图',
@@ -82,12 +77,7 @@ export const NAV_DATA: NavData[] = [
         desc: '为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件',
         link: 'https://qwerty.fe-mm.com'
       },
-      {
-        icon: '/logo.png',
-        title: 'mmPlayer',
-        desc: 'mmPlayer 在线音乐播放器',
-        link: 'https://netease-music.fe-mm.com'
-      }
+      
     ]
   },
   {
