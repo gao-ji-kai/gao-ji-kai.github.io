@@ -27,6 +27,23 @@ export default {
         { text: '常用正则整理', link: '/workflow/utils/regexp' },
         { text: '常用方法整理', link: '/workflow/utils/function' }
       ]
-        },
+      },
+       {
+      text: 'Node 相关',
+      collapsed: false,
+         items: [
+           { text: 'npm 常用命令', link: '/workflow/node/npm' },
+           { text: 'Koa 相关', link: '/workflow/node/koa' }
+         ]
+      },
+       {
+      text: '终端相关',
+      collapsed: false,
+      items: [
+        { text: 'Zsh 配置', link: '/workflow/terminal/zsh' },
+        { text: '命令行工具', link: '/workflow/terminal/toolkit' },
+        { text: 'Shell 命令', link: '/workflow/terminal/shell' }
+      ]
+    },
     ]
 }
