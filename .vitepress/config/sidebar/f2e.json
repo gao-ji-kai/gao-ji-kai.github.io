@@ -4,14 +4,16 @@
       "text": "JavaScript 基础知识",
       "collapsed": false,
       "items": [
+        { "text": "Dom&Bom" ,"link": "/f2e/javascript/dom" },
         { "text": "数据类型" ,"link": "/f2e/javascript/types" },
         { "text": "引用类型的拷贝", "link":" /f2e/javascript/clone" },
         { "text": "类型转换", "link": "/f2e/javascript/conversions "},
         { "text": "原型和原型链", "link": "/f2e/javascript/prototype" },
         { "text": "继承", "link": "/f2e/javascript/inherit" }
       ]
-        },
-         {
+    },
+
+    {
       "text": "Git 知识点",
       "link": "/f2e/git/Git知识"
     }
