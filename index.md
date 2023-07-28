@@ -25,7 +25,7 @@ features:
     link: /analysis/utils/only-allow
     linkText: 源码阅读
   - icon: ⚡️
-    title: Workflow
+    title: Work相关
     details: 在工作中学到的一切<small>（常用库/工具/奇淫技巧等）</small><br />配合 CV 大法来更好的摸鱼
     link: /workflow/utils/library
     linkText: 常用工具库

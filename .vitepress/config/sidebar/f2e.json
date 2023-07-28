@@ -1,5 +1,14 @@
 
 [
+  {
+      "text": "HTML/CSS 基础知识",
+      "collapsed": false,
+      "items": [
+        { "text": "HTML知识点" ,"link": "/f2e/html/index" },
+        { "text": "CSS知识点" ,"link": "/f2e/CSS/index" }
+       
+      ]
+    },
     {
       "text": "JavaScript 基础知识",
       "collapsed": false,
@@ -9,7 +18,8 @@
         { "text": "引用类型的拷贝", "link":" /f2e/javascript/clone" },
         { "text": "类型转换", "link": "/f2e/javascript/conversions "},
         { "text": "原型和原型链", "link": "/f2e/javascript/prototype" },
-        { "text": "继承", "link": "/f2e/javascript/inherit" }
+        { "text": "继承", "link": "/f2e/javascript/inherit" },
+        { "text": "ES6", "link": "/f2e/javascript/es6"}
       ]
     },
 
