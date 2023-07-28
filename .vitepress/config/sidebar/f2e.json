@@ -5,7 +5,8 @@
       "collapsed": false,
       "items": [
         { "text": "HTML知识点" ,"link": "/f2e/html/index" },
-        { "text": "CSS知识点" ,"link": "/f2e/CSS/index" }
+        { "text": "CSS知识点" ,"link": "/f2e/css/index" },
+        { "text": "BEM" ,"link": "/f2e/bem/index" }
        
       ]
     },
