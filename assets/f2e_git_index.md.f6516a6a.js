@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.bd1db979.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"f2e/git/index.md","filePath":"f2e/git/index.md","lastUpdated":1690532372000}'),n={name:"f2e/git/index.md"};function r(i,o,s,d,c,p){return t(),a("div")}const m=e(n,[["render",r]]);export{_ as __pageData,m as default};
