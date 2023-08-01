@@ -23,7 +23,10 @@
         { "text": "ES6", "link": "/f2e/javascript/es6"}
       ]
     },
-
+    {
+      "text": "前端模块化",
+      "link": "/f2e/module/index"
+    },
     {
       "text": "Git 知识点",
       "collapsed": false,
@@ -33,6 +36,22 @@
          { "text": "GitHub" ,"link": "/f2e/git/github" }
 
       ]
-    }
-       
+    },
+    {
+      "text": "浏览器相关",
+      "collapsed": false,
+       "items": [
+         { "text": "浏览器基础" ,"link": "/f2e/browser/index" },
+         { "text": "浏览器缓存" ,"link": "/f2e/browser/browserCache" },
+         { "text": "浏览器存储" ,"link": "/f2e/browser/browserStorage"}
+      ]
+    },
+     {
+      "text": "网络相关",
+      "collapsed": false,
+       "items": [
+         { "text": "TCP" ,"link": "/f2e/network/tcp" },
+         { "text": "HTTP" ,"link": "/f2e/network/http" }       
+      ]
+    } 
 ]
