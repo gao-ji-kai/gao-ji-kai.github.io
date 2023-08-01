@@ -29,7 +29,8 @@
       "collapsed": false,
        "items": [
         { "text": "Git命令清单" ,"link": "/f2e/git/command" },
-        { "text": "Git常用命令" ,"link": "/f2e/git/index" }
+        { "text": "Git常用命令" ,"link": "/f2e/git/index" },
+         { "text": "GitHub" ,"link": "/f2e/git/github" }
 
       ]
     }
