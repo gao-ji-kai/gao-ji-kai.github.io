@@ -16,7 +16,6 @@ export default {
       ]
     },
     { text: '在线工具', link: '/efficiency/online-tools' },
-    { text: '书签脚本', link: '/efficiency/bookmark-scripts' }
   ],
     '/workflow/': [
     {
