@@ -77,10 +77,9 @@ function isUrl(string) {
   }
 }
 
-isUrl('maomao') // false
+isUrl('gaoter') // false
 
-isUrl('https://github.com/maomao1996') // true
-isUrl('https://a.b.c') // true
+isUrl('https:gaoter.cn') // true
 ```
 
 ::: warning 注意
