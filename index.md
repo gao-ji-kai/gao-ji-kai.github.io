@@ -22,7 +22,7 @@ features:
   - icon: 📘
     title: 源码阅读
     details: 了解各种库和框架的实现原理<br />学习其中的小技巧和冷知识
-    link: /analysis/utils/only-allow
+    link: /sourceCode/vue2/construction
     linkText: 源码阅读
   - icon: ⚡️
     title: Work相关

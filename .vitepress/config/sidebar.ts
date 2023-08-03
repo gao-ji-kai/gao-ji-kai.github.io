@@ -17,6 +17,20 @@ export default {
     },
     { text: '在线工具', link: '/efficiency/online-tools' },
   ],
+     '/sourceCode/vue2': [
+    {
+      text: '手写vue2源码',
+      collapsed: false,
+      items: [
+        { text: '搭建开发流程', link: '/sourceCode/vue2/construction' },
+        { text: 'vue初始化', link: '/sourceCode/vue2/init' },
+        {text: '数据响应式原理', link: '/sourceCode/vue2/responsive'}
+      ]
+      },
+     
+    ],
+    
+    
     '/workflow/': [
     {
       text: '常用工具/方法',

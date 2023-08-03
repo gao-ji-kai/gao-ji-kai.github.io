@@ -19,14 +19,11 @@ const nav = [
     },
      {
         text: '源码阅读',
-        // items: [
-        //     { text: 'HTML/CSS 基础知识', link: '/f2e/html/index' },
-        //     { text: 'JavaScript 基础知识', link: '/f2e/javascript/dom' },
-        //     { text: '前端模块化', link: '/f2e/module/index' },
-        //     { text: 'Git 知识点', link: '/f2e/git/index' },
-        //     { text: '浏览器相关', link: '/f2e/browser/index'},
-        //     { text: '网络相关', link: '/f2e/network/tcp' },
-        // ]
+        items: [
+            { text: '搭建开发流程', link: '/sourceCode/vue2/construction' },
+            
+           
+        ]
     },
        {
         text: 'work',
