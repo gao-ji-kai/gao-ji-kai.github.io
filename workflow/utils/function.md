@@ -136,3 +136,304 @@ function getIdCardInfo(idCard, separator = '/') {
   }
 }
 ```
+## 导出导入文件
+- #### 参数
+- **name:** 文件名
+- **data:** 二进制数据
+- **src:** 文件url
+
+```js
+/**
+ *  导出excel文件
+ *  @module downloadExcel
+ *  @param { string } name - 文件名
+ *  @param { blob } data - 二进制数据
+ *  @param { src } [src=null] - 文件url
+ */
+export default function downloadExcel(name, data, src = null) {
+  const fileName = name
+  if (data) {
+    const blob = new Blob([data], {
+      type: 'application/vnd.ms-excel' + ';charset=utf-8',
+    })
+    src = window.URL.createObjectURL(blob)
+  }
+
+  if (src) {
+    const a = document.createElement('a')
+    const event = new MouseEvent('click')
+    a.download = fileName
+    a.href = src
+    a.target = '_blank'
+    a.dispatchEvent(event)
+  }
+}
+
+```
+
+
+## 判断移动端还是pc端
+
+```js
+/**
+ * 判断移动端还是pc端
+ */
+export const isMobile = function () {
+  var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+  if (isMobile) {
+    return true
+  } else {
+    return false
+  }
+}
+```
+
+
+## 获取当前年月日 并转换成所需格式
+- #### 参数
+- **time:** 如果有值 转换成所需的日期格式
+
+```js
+/**
+ * 获取当前年月日 并转换成所需格式
+ * @param time 如果有值 转换成所需的日期格式
+ */
+export const getDate = function (time) {
+  let nowDate = new Date()
+  if (time) {
+    nowDate = new Date(time)
+  }
+  const date = {
+    year: nowDate.getFullYear(),
+    month: nowDate.getMonth() + 1,
+    date: nowDate.getDate(),
+    getHours: nowDate.getHours(),
+    getMinutes: nowDate.getMinutes(),
+    getSeconds: nowDate.getSeconds()
+  }
+  const systemDate = date.year + '-' + date.month + '-' + date.date + ' ' + date.getHours + ':' + date.getMinutes + ':' + date.getSeconds
+  return systemDate
+}
+```
+
+
+## 修复firefox/chrome中toFixed兼容性问题
+
+```js
+* 修复firefox/chrome中toFixed兼容性问题
+ * firefox/chrome中，对于小数最后一位为5时进位不正确，
+ * 修复方式即判断最后一位为5的，改成6，再调用toFixed
+   number {原始数字}
+   precision {位数}
+ */
+export function toFixed(number, precision) {
+  const str = number + '';
+  // 小数点位置
+  const pointIndex = str.indexOf('.');
+  // 末位为5 并且 小数点后面的位数必须大于要取精度的位数
+  if (str.slice(-1) == '5' && pointIndex !== -1 && str.slice(pointIndex + 1).length > precision) {
+    return (str.slice(0, -1) + '6' - 0).toFixed(precision);
+  } else {
+    return number.toFixed(precision);
+  }
+}
+```
+
+## 时分秒转换
+```js
+// 时分秒转换
+export function formatSeconds(value) {
+  var theTime = parseInt(value); // 秒
+  var middle = 0; // 分
+  var hour = 0; // 小时
+  if (theTime > 60) {
+    middle = parseInt(theTime / 60);
+    theTime = parseInt(theTime % 60);
+    if (middle > 60) {
+      hour = parseInt(middle / 60);
+      middle = parseInt(middle % 60);
+    }
+  }
+  var result = '' + parseInt(theTime) + '秒';
+  if (middle > 0) {
+    result = '' + parseInt(middle) + '分' + result;
+  }
+  if (hour > 0) {
+    result = '' + parseInt(hour) + '小时' + result;
+  }
+  return result;
+}
+```
+
+## 经纬度类型转换
+- #### 参数
+- **array:** number[] || object[]
+- **source:** 原坐标类型
+- **target:** 目标坐标类型
+```js
+/**
+ * @name 经纬度类型转换
+ * @param {*} array number[] || object[]
+ * @param {*} source 原坐标类型
+ * @param {*} target 目标坐标类型
+ * @default 默认高德(GCJ02)转百度(BD09) 
+ */
+export function reversePoints(array, source = 3, target = 5) {
+  return new Promise((res, rej) => {
+    let coordsTypeFrom = source === 3 ? 'gcj02' : 'bd09ll';
+    let coordsTypeTo = target === 5 ? 'bd09ll' : 'gcj02';
+    convert({
+        coordsTypeFrom: coordsTypeFrom,
+        coordsTypeTo: coordsTypeTo,
+        coordsList: array,
+      })
+      .then(({
+        data
+      }) => {
+        console.log(data,'999');
+        res(data);
+      })
+      .catch((err) => {
+        rej(err);
+      });
+  });
+}
+```
+
+## 下载excel
+```js
+// 下载excel
+export function downloadExcel(name, data, src = null) {
+  const fileName = name || `${moment(new Date()).format('YYYYMMDDHHmm')}.xls`
+  if (data) {
+    const blob = new Blob([data], {
+      type: 'application/vnd.ms-excel' + ';charset=utf-8'
+    })
+    src = window.URL.createObjectURL(blob)
+  }
+  if (src) {
+    const a = document.createElement('a')
+    const event = new MouseEvent('click')
+    a.download = fileName
+    a.href = src
+    a.dispatchEvent(event)
+  }
+}
+
+
+export function downloadExcel({
+  data,
+  fileName,
+  headers = {},
+  suffix = "xls",
+  customName = true,
+}) {
+  if (headers["content-type"].includes("json")) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const { result } = reader;
+        const errorInfos = JSON.parse(result);
+        Message.error(errorInfos.msg);
+      } catch (error) {}
+    };
+    reader.readAsText(data);
+    return;
+  }
+
+  if (!fileName && headers["content-disposition"]) {
+    const cache = headers["content-disposition"].split(";");
+
+    const fileItem = cache.filter((item) => item.indexOf("filename") > -1)[0];
+    if (fileItem) {
+      fileName = decodeURIComponent(fileItem.replace("filename=", ""))
+        .replace(/"/g, "")
+        .replace(/\s+/g, "");
+    }
+  }
+  const blob = new Blob([data], {
+    type: "application/vnd.ms-excel" + ";charset=utf-8",
+  });
+  const href = window.URL.createObjectURL(blob);
+  if (href) {
+    const a = document.createElement("a");
+    const event = new MouseEvent("click");
+    if (customName) {
+      fileName = fileName ? `${fileName}.${suffix}` : `${new Date()}.${suffix}`;
+    }
+    a.download = `${fileName}`;
+    a.href = href;
+    a.dispatchEvent(event);
+    // 在内存中移除URL 对象
+    window.URL.revokeObjectURL(href);
+  }
+}
+
+```
+## 格式化时间
+```js
+// 格式化时间
+export function formatTime (date) {
+  if (date === undefined || date === null) {
+    return ''
+  }
+  return moment(date).format('YYYY/MM/DD HH:mm')
+}
+```
+
+## 通过身份证 转出 生日日期
+```js
+// 通过身份证 转出 生日日期
+export function birthDay (iden) {
+  let birth = null
+  if (iden.length === 18) {
+    birth =
+      iden.substring(6, 10) +
+      '-' +
+      iden.substring(10, 12) +
+      '-' +
+      iden.substring(12, 14)
+  }
+  if (iden.length === 15) {
+    birth =
+      '19' +
+      iden.substring(6, 8) +
+      '-' +
+      iden.substring(8, 10) +
+      '-' +
+      iden.substring(10, 12)
+  }
+  return birth
+}
+```
+## 获取地址栏的hash参数和search参数
+```js
+/**
+ * 获取地址栏的hash参数和search参数
+ */
+export function getUrlparams () {
+  const save = {}
+  const arr = [
+    {
+      key: 'hash',
+      content: window.location.hash.split('?')[1],
+      params: {}
+    },
+    {
+      key: 'search',
+      content: window.location.search.substr(1),
+      params: {}
+    }
+  ]
+}
+```
+## 判断是否是iframe
+```js
+// 判断是否是iframe
+export function isIframe () {
+  const windowHref = window.location.href
+  const iframeHref = window.top.location.href
+  return windowHref !== iframeHref
+  // return false
+}
+```
