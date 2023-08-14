@@ -1,9 +1,4 @@
-<!--
- * @Name: IFooter.vue
- * @Author: forguo
- * @Date: 2023/6/29 11:04
- * @Description: 版权信息组件
--->
+
 <template>
     <Layout>
         <template #layout-bottom>
@@ -11,10 +6,7 @@
                 <template v-if="theme.footers && theme.footers.length">
                     <div class="i-footer-column" v-for="(item, idx) in theme.footers" v-html="item" :key="idx"></div>
                 </template>
-                <div class="i-footer-column">
-                    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span></span>，
-                    <span id="busuanzi_container_site_uv">总访客数<span id="busuanzi_value_site_uv"></span></span>
-                </div>
+               
             </div>
         </template>
     </Layout>

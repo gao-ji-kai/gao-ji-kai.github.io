@@ -1,8 +1,4 @@
-/**
- * @Author: forguo
- * @Date: 2022/7/8 23:23
- * @Description: head
- */
+
 import type { HeadConfig } from 'vitepress'
 const head: HeadConfig[] = [
     [

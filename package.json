@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "gaoter.cn",
     "main": "index.js",
-    "homepage": "https://github.com/wforguo/forguo.cn",
+    "homepage": "https://github.com/gao-ji-kai/gaoter.cn",
     "scripts": {
         "dev": "vitepress dev . --host --port 5001",
         "build": "cross-env NODE_ENV=production && vitepress build .",
