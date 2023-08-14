@@ -7,7 +7,7 @@ const config: UserConfig = {
     title: '学习笔记',
     description: '一个前端工程师的自我修养',
     lang: 'zh-CN',
-    lastUpdated: true,
+    lastUpdated: false,
     ignoreDeadLinks: true,
     markdown: {
         lineNumbers: true,
