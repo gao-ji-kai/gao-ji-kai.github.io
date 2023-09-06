@@ -39,6 +39,7 @@ obj2 // { name: '高特er', props: { a: 2 } }
 ### `Array.prototype.concat()`
 
 ```js
+
 const arr1 = [1, 2, 3, [4, 5]]
 
 const arr2 = arr1.concat()
@@ -47,6 +48,7 @@ arr2[3][0] = 'arr2'
 
 arr1 // [1, 2, 3, ['arr2', 5]];
 arr2 // ['arr2', 2, 3, ['arr2', 5]];
+
 ```
 
 ### `Array.prototype.slice()`
