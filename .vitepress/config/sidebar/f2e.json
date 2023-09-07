@@ -62,5 +62,9 @@
          { "text": "TCP" ,"link": "/f2e/network/tcp"},
          { "text": "HTTP" ,"link": "/f2e/network/http" }       
       ]
-    } 
+    },
+      {
+      "text": "原理性相关",
+      "link": "/f2e/principle/index"
+    }
 ]
