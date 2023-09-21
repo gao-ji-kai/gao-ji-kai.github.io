@@ -26,9 +26,26 @@ export default {
         { text: 'vue初始化', link: '/sourceCode/vue2/init' },
         {text: '数据响应式原理', link: '/sourceCode/vue2/responsive'}
       ]
-      },
+       },
+       {
+       text: 'vue2源码学习',
+      collapsed: false,
+      items: [
+        {
+          text: '变化侦测篇',
+          collapsed: false,
+          items: [
+            { text: '综述', link: '/sourceCode/vue2SourceCode/reactive/index.md' }, 
+            { text: 'Object的变化侦测', link: '/sourceCode/vue2SourceCode/reactive/object.md' }, 
+            { text: 'Array的变化侦测', link: '/sourceCode/vue2SourceCode/reactive/array.md'}, 
+          ]
+        },
+       
+      ]
+    }
      
-    ],
+  ],
+   
     
     
     '/workflow/': [
