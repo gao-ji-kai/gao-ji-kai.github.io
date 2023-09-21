@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as t,Q as i}from"./chunks/framework.9dc859f3.js";const f=JSON.parse('{"title":"知识体系","description":"","frontmatter":{},"headers":[],"relativePath":"f2e/知识体系.md","filePath":"f2e/知识体系.md"}'),l={name:"f2e/知识体系.md"},r=i("",6),o=[r];function _(s,n,c,p,d,h){return e(),t("div",null,o)}const m=a(l,[["render",_]]);export{f as __pageData,m as default};
