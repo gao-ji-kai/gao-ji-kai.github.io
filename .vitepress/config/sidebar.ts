@@ -40,6 +40,16 @@ export default {
             { text: 'Array的变化侦测', link: '/sourceCode/vue2SourceCode/reactive/array.md'}, 
           ]
         },
+         {
+          text: '虚拟DOM篇',
+          collapsed: false,
+          items: [
+            { text: 'Vue中的虚拟DOM', link: '/sourceCode/vue2SourceCode/virtualDOM/index.md' }, 
+            { text: 'Vue中的DOM-Diff', link: '/sourceCode/vue2SourceCode/virtualDOM/patch.md' }, 
+            { text: '更新子节点', link: '/sourceCode/vue2SourceCode/virtualDOM/updataChildren.md' }, 
+            { text: '优化更新子节点', link: '/sourceCode/vue2SourceCode/virtualDOM/optimizeUpdataChildren.md'}, 
+          ]
+        },
        
       ]
     }
