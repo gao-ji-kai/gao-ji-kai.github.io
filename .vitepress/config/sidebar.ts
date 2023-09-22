@@ -50,6 +50,19 @@ export default {
             { text: '优化更新子节点', link: '/sourceCode/vue2SourceCode/virtualDOM/optimizeUpdataChildren.md'}, 
           ]
         },
+           {
+          text: '模板编译篇',
+          collapsed: false,
+             items: [
+            { text: '综述', link: '/sourceCode/vue2SourceCode/complie/index.md' },
+            { text: '模板解析阶段(整体运行流程)', link: '/sourceCode/vue2SourceCode/complie/parse.md' }, 
+            { text: '模板解析阶段(HTML解析器)', link: '/sourceCode/vue2SourceCode/complie/HTMLParse.md' }, 
+            { text: '模板解析阶段(文本解析器)', link: '/sourceCode/vue2SourceCode/complie/textParse.md' },
+            { text: '优化阶段', link: '/sourceCode/vue2SourceCode/complie/optimize.md' }, 
+            { text: '代码生成阶段', link: '/sourceCode/vue2SourceCode/complie/codegen.md' }, 
+            { text: '总结', link: '/sourceCode/vue2SourceCode/complie/summary.md'}
+          ]
+        },
        
       ]
     }
