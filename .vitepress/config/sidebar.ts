@@ -20,7 +20,7 @@ export default {
      '/sourceCode/vue2': [
     {
       text: '手写vue2源码',
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: '搭建开发流程', link: '/sourceCode/vue2/construction' },
         { text: 'vue初始化', link: '/sourceCode/vue2/init' },
@@ -33,7 +33,7 @@ export default {
       items: [
         {
           text: '变化侦测篇',
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: '综述', link: '/sourceCode/vue2SourceCode/reactive/index.md' }, 
             { text: 'Object的变化侦测', link: '/sourceCode/vue2SourceCode/reactive/object.md' }, 
@@ -42,7 +42,7 @@ export default {
         },
          {
           text: '虚拟DOM篇',
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: 'Vue中的虚拟DOM', link: '/sourceCode/vue2SourceCode/virtualDOM/index.md' }, 
             { text: 'Vue中的DOM-Diff', link: '/sourceCode/vue2SourceCode/virtualDOM/patch.md' }, 
@@ -50,9 +50,9 @@ export default {
             { text: '优化更新子节点', link: '/sourceCode/vue2SourceCode/virtualDOM/optimizeUpdataChildren.md'}, 
           ]
         },
-           {
+        {
           text: '模板编译篇',
-          collapsed: false,
+          collapsed: true,
              items: [
             { text: '综述', link: '/sourceCode/vue2SourceCode/complie/index.md' },
             { text: '模板解析阶段(整体运行流程)', link: '/sourceCode/vue2SourceCode/complie/parse.md' }, 
@@ -61,6 +61,21 @@ export default {
             { text: '优化阶段', link: '/sourceCode/vue2SourceCode/complie/optimize.md' }, 
             { text: '代码生成阶段', link: '/sourceCode/vue2SourceCode/complie/codegen.md' }, 
             { text: '总结', link: '/sourceCode/vue2SourceCode/complie/summary.md'}
+          ]
+        },
+        {
+          text: '生命周期篇',
+          collapsed: true,
+             items: [
+            { text: '综述', link: '/sourceCode/vue2SourceCode/lifecycle/index.md' },
+            { text: '初始化阶段(new Vue)', link: '/sourceCode/vue2SourceCode/lifecycle/newVue.md' }, 
+            { text: '初始化阶段(initLifecycle)', link: '/sourceCode/vue2SourceCode/lifecycle/initLifecycle.md' }, 
+            { text: '初始化阶段(initEvents)', link: '/sourceCode/vue2SourceCode/lifecycle/initEvents.md' },
+            { text: '初始化阶段(initInjections)', link: '/sourceCode/vue2SourceCode/lifecycle/initInjections.md' }, 
+            { text: '初始化阶段(initState)', link: '/sourceCode/vue2SourceCode/lifecycle/initState.md' }, 
+            { text: '模板编译阶段', link: '/sourceCode/vue2SourceCode/lifecycle/templateComplie.md' },
+            { text: '挂载阶段', link: '/sourceCode/vue2SourceCode/lifecycle/mount.md' },
+            { text: '销毁阶段', link: '/sourceCode/vue2SourceCode/lifecycle/destory.md'}
           ]
         },
        
