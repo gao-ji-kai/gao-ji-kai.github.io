@@ -1,6 +1,12 @@
----
-title: 生命周期篇综述
----
+<!--
+ * @Author: gaojikai gaojikai@fehorizon.com
+ * @Date: 2023-09-21 13:36:08
+ * @LastEditors: gaojikai gaojikai@fehorizon.com
+ * @LastEditTime: 2023-09-26 09:36:49
+ * @FilePath: \gaoter\sourceCode\vue2SourceCode\lifecycle\index.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+#  生命周期篇综述
 
 ## 1. 前言
 

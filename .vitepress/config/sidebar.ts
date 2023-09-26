@@ -17,11 +17,11 @@ export default {
     },
     { text: '在线工具', link: '/efficiency/online-tools' },
   ],
-     '/sourceCode/vue2': [
+  '/sourceCode/vue2': [
     {
       text: '手写vue2源码',
       collapsed: true,
-      items: [
+         items: [
         { text: '搭建开发流程', link: '/sourceCode/vue2/construction' },
         { text: 'vue初始化', link: '/sourceCode/vue2/init' },
         {text: '数据响应式原理', link: '/sourceCode/vue2/responsive'}
@@ -29,7 +29,7 @@ export default {
        },
        {
        text: 'vue2源码学习',
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           text: '变化侦测篇',
@@ -76,6 +76,14 @@ export default {
             { text: '模板编译阶段', link: '/sourceCode/vue2SourceCode/lifecycle/templateComplie.md' },
             { text: '挂载阶段', link: '/sourceCode/vue2SourceCode/lifecycle/mount.md' },
             { text: '销毁阶段', link: '/sourceCode/vue2SourceCode/lifecycle/destory.md'}
+          ]
+        }, {
+          text: '实例方法篇',
+          collapsed: true,
+             items: [
+            { text: '数据相关的方法', link: '/sourceCode/vue2SourceCode/instanceMethods/data.md' },
+            { text: '事件相关的方法', link: '/sourceCode/vue2SourceCode/instanceMethods/event.md' }, 
+            { text: '生命周期相关的方法', link: '/sourceCode/vue2SourceCode/instanceMethods/lifecycle.md' }
           ]
         },
        

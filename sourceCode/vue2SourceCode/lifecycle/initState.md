@@ -1,6 +1,4 @@
----
-title: 初始化阶段(initState)
----
+# 初始化阶段(initState)
 
 ## 1. 前言
 

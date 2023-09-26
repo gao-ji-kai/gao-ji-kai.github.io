@@ -1,6 +1,4 @@
----
-title: 初始化阶段(initInjections)
----
+# 初始化阶段(initInjections)
 
 ## 1. 前言
 

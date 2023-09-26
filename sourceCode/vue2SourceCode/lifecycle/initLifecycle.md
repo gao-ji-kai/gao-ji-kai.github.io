@@ -1,6 +1,4 @@
----
-title: 初始化阶段(initLifecycle)
----
+# 初始化阶段(initLifecycle)
 
 ## 1. 前言
 

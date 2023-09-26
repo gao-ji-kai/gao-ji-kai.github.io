@@ -1,8 +1,5 @@
----
-title: 生命周期相关的方法
----
 
-## 0. 前言
+## 前言
 
 与生命周期相关的实例方法有4个，分别是`vm.$mount`、`vm.$forceUpdate`、`vm.$nextTick`和`vm.$destory`。其中，`$forceUpdate`和`$destroy`方法是在`lifecycleMixin`函数中挂载到`Vue`原型上的，`$nextTick`方法是在`renderMixin`函数中挂载到`Vue`原型上的，而`$mount`方法是在跨平台的代码中挂载到`Vue`原型上的。代码如下：
 
@@ -117,7 +114,7 @@ vm.$nextTick( [callback] )
 </template>
 <script>
     var vm = new Vue({
-      el: '##example',
+      el: '#example',
       data: {
         message: '123'
       }

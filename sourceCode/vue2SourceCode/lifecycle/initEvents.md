@@ -1,6 +1,4 @@
----
-title: 初始化阶段(initEvents)
----
+# 初始化阶段(initEvents)
 
 ## 1. 前言
 

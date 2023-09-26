@@ -1,5 +1,13 @@
+<!--
+ * @Author: gaojikai gaojikai@fehorizon.com
+ * @Date: 2023-09-21 13:36:08
+ * @LastEditors: gaojikai gaojikai@fehorizon.com
+ * @LastEditTime: 2023-09-26 09:37:39
+ * @FilePath: \gaoter\sourceCode\vue2SourceCode\reactive\index.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 
-
+# 综述
 ## 1. 前言
 
 众所周知，`Vue`最大的特点之一就是数据驱动视图，那么什么是数据驱动视图呢？在这里，我们可以把数据理解为状态，而视图就是用户可直观看到页面。页面不可能是一成不变的，它应该是动态变化的，而它的变化也不应该是无迹可寻的，它或者是由用户操作引起的，亦或者是由后端数据变化引起的，不管它是因为什么引起的，我们统称为它的状态变了，它由前一个状态变到了后一个状态，页面也就应该随之而变化，所以我们就可以得到如下一个公式：
