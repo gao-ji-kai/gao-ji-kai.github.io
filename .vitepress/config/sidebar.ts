@@ -77,13 +77,30 @@ export default {
             { text: '挂载阶段', link: '/sourceCode/vue2SourceCode/lifecycle/mount.md' },
             { text: '销毁阶段', link: '/sourceCode/vue2SourceCode/lifecycle/destory.md'}
           ]
-        }, {
+        },
+        {
           text: '实例方法篇',
           collapsed: true,
              items: [
             { text: '数据相关的方法', link: '/sourceCode/vue2SourceCode/instanceMethods/data.md' },
             { text: '事件相关的方法', link: '/sourceCode/vue2SourceCode/instanceMethods/event.md' }, 
             { text: '生命周期相关的方法', link: '/sourceCode/vue2SourceCode/instanceMethods/lifecycle.md' }
+          ]
+        },
+        {
+          text: '全局API',
+          collapsed: true,
+             items: [
+            { text: '全局API', link: '/sourceCode/vue2SourceCode/globalAPI/index.md' },
+          ]
+        },
+         {
+          text: '过滤器篇',
+          collapsed: true,
+             items: [
+            { text: '用法', link: '/sourceCode/vue2SourceCode/filter/index.md' },
+            { text: '工作原理', link: '/sourceCode/vue2SourceCode/filter/filterPrinciple.md' }, 
+            { text: '解析过滤器', link: '/sourceCode/vue2SourceCode/filter/parseFilters.md' }
           ]
         },
        
