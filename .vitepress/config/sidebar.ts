@@ -103,6 +103,20 @@ export default {
             { text: '解析过滤器', link: '/sourceCode/vue2SourceCode/filter/parseFilters.md' }
           ]
         },
+         {
+          text: '指令',
+          collapsed: true,
+             items: [
+            { text: '自定义指令', link: '/sourceCode/vue2SourceCode/directives/customDirectives.md' },
+          ]
+        },
+          {
+          text: '内置组件',
+          collapsed: true,
+             items: [
+            { text: 'keep-live', link: '/sourceCode/vue2SourceCode/BuiltInComponents/keep-alive.md' },
+          ]
+        },
        
       ]
     }
