@@ -43,6 +43,7 @@ description: 收集个人使用过或遇到的JavaScript工具库
 ### 特效
 
 - [canvas-confetti](https://github.com/catdad/canvas-confetti) 五彩纸屑特效
+- [tippy.js](https://github.com/atomiks/tippyjs)  完整的工具提示、弹出窗口、下拉菜单和菜单解决方案
 
 ## 本地存储
 
@@ -51,6 +52,7 @@ description: 收集个人使用过或遇到的JavaScript工具库
 ## 滚动处理
 
 - [better-scroll](https://github.com/ustbhuangyi/better-scroll) 重点解决移动端（已支持 PC）各种滚动场景需求的插件
+- [vue-seamless-scroll](https://github.com/chenxuan0000/vue-seamless-scroll) 重点解决一个简单的基于vue.js的无缝滚动
 
 ## 事件处理
 
@@ -59,6 +61,7 @@ description: 收集个人使用过或遇到的JavaScript工具库
 ## 图片处理
 
 - [html2canvas](https://github.com/niklasvh/html2canvas) 页面截图
+
 - [medium-zoom](https://github.com/francoischalifour/medium-zoom) 为图片提供可缩放的功能
 - 二维码
   - [qrcode](https://github.com/soldair/node-qrcode) QR 码和 2d 条码生成器（支持浏览器和 `Node`）
@@ -74,6 +77,16 @@ description: 收集个人使用过或遇到的JavaScript工具库
 - [rimraf](https://github.com/isaacs/rimraf) 用于删除文件和文件夹，类似 `rm -rf`
 - [glob](https://github.com/isaacs/node-glob) 文件查找
 - [globby](https://github.com/sindresorhus/globby) 使用更友好的文件查找（支持 `promise`、否定模式、`ignore` 文件配置等）
+
+
+## PDF处理
+
+- [vue-easy-print](https://github.com/pcloth/vue-easy-print) 这是一个基于 vue 2.0 的打印组件
+- [vue-pdf](https://github.com/FranckFreiburger/vue-pdf) vue.js pdf 查看器是 Vue 的一个包，可让您通过 vue 组件轻松显示和查看 PDF。
+- [jsPDF](https://github.com/parallax/jsPDF) 客户端 JavaScript PDF 生成。和html2canvas配合使用
+- [vue-print-nb](https://github.com/Power-kxLee/vue-print-nb) 这是一个用于打印的指令包装器，简单、快速、方便、轻便。
+
+
 
 ## 版本号处理
 
@@ -166,3 +179,24 @@ description: 收集个人使用过或遇到的JavaScript工具库
 - [VuePress](https://github.com/vuejs/vuepress) `Vue` 驱动的静态网站生成器
 - [dumi](https://github.com/umijs/dumi) 基于 `Umi` 为组件开发场景而生的文档工具
 - [Docusaurus](https://github.com/facebook/docusaurus) 基于 `React` 的静态网站生成器
+
+## 移动端相关工具
+- [vconsole](https://github.com/Tencent/vConsole) 移动端H5页面打印
+- [vue-clipboard2](https://github.com/Inndy/vue-clipboard2) 移动端复制到剪切板
+- [pdfjs-dist](https://github.com/mozilla/pdf.js) javaScript PDF阅读器
+- [vue-pdf-signature](https://github.com/jokostyawan/vue-pdfjs-signature) PDF预览
+- [number-precision](https://github.com/nefe/number-precision) 精确执行加法、建发、乘法、触发运算
+- [fastclick](https://github.com/ftlabs/fastclick) 用于消除物理点击和click移动浏览器上时间触发之间的300毫秒延迟、目的是感觉更少的延迟和更改的响应
+- [mescroll.js](https://github.com/mescroll/mescroll) 精致的下拉刷新和上拉加载js框架
+- [vue-mobile-calendar](https://github.com/lx544690189/vue-mobile-calendar) 移动端vue日期选择组件
+- [vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate) 页面重新加载之间保持持久化(不在维护)
+- [throttle-debounce](https://github.com/niksy/throttle-debounce) 节流防抖
+- [vue-navigation](https://github.com/zack24q/vue-navigation) 一个页面导航库，记录路由并缓存页面，像原生APP导航一样
+
+
+
+
+
+
+
+
