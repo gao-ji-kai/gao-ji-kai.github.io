@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as n,Q as l}from"./chunks/framework.fd95ed2e.js";const F=JSON.parse('{"title":"Git","description":"","frontmatter":{},"headers":[],"relativePath":"f2e/git/index.md","filePath":"f2e/git/index.md"}'),p={name:"f2e/git/index.md"},e=l("",49),o=[e];function t(r,c,i,y,E,d){return a(),n("div",null,o)}const u=s(p,[["render",t]]);export{F as __pageData,u as default};
